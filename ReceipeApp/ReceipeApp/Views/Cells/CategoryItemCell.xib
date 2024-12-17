@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Satoshi-Medium.otf">
+            <string>Satoshi-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryItemCell" id="gTV-IL-0wX" customClass="CategoryItemCell" customModule="ReceipeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="143"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In4-og-WK6">
+                        <rect key="frame" x="20" y="10" width="269" height="123"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Medium" family="Satoshi" pointSize="14"/>
+                        <color key="textColor" name="itemText"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="itemColor"/>
+            <constraints>
+                <constraint firstItem="In4-og-WK6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="6Hl-Jh-3nv"/>
+                <constraint firstItem="In4-og-WK6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="8Js-Cw-8ka"/>
+                <constraint firstAttribute="trailing" secondItem="In4-og-WK6" secondAttribute="trailing" constant="20" id="D4M-fw-fdm"/>
+                <constraint firstAttribute="bottom" secondItem="In4-og-WK6" secondAttribute="bottom" constant="10" id="dH0-4h-ngH"/>
+            </constraints>
+            <size key="customSize" width="244" height="143"/>
+            <connections>
+                <outlet property="tagLabel" destination="In4-og-WK6" id="ExI-qg-lDs"/>
+            </connections>
+            <point key="canvasLocation" x="170.99236641221373" y="-13.028169014084508"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="itemColor">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="itemText">
+            <color red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

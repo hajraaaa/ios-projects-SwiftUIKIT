@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		318191FE2CD4AD82009D84C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318191FD2CD4AD82009D84C1 /* AppDelegate.swift */; };
+		318192002CD4AD82009D84C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318191FF2CD4AD82009D84C1 /* SceneDelegate.swift */; };
+		318192052CD4AD82009D84C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318192032CD4AD82009D84C1 /* Main.storyboard */; };
+		318192072CD4AD84009D84C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318192062CD4AD84009D84C1 /* Assets.xcassets */; };
+		3181920A2CD4AD84009D84C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318192082CD4AD84009D84C1 /* LaunchScreen.storyboard */; };
+		318192172CD4B21B009D84C1 /* CategoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318192152CD4B21B009D84C1 /* CategoryItemCell.swift */; };
+		318192182CD4B21B009D84C1 /* CategoryItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318192162CD4B21B009D84C1 /* CategoryItemCell.xib */; };
+		3181921B2CD4B28B009D84C1 /* RecipeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318192192CD4B28B009D84C1 /* RecipeCardCell.swift */; };
+		3181921C2CD4B28B009D84C1 /* RecipeCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3181921A2CD4B28B009D84C1 /* RecipeCardCell.xib */; };
+		3181921E2CD4B31B009D84C1 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181921D2CD4B31B009D84C1 /* RecipeViewController.swift */; };
+		3181926A2CD4B3A6009D84C1 /* FFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 318192252CD4B3A6009D84C1 /* FFL.txt */; };
+		3181926B2CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192282CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf */; };
+		3181926C2CD4B3A6009D84C1 /* Satoshi-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192292CD4B3A6009D84C1 /* Satoshi-Variable.ttf */; };
+		3181926D2CD4B3A6009D84C1 /* satoshi.css in Resources */ = {isa = PBXBuildFile; fileRef = 3181922C2CD4B3A6009D84C1 /* satoshi.css */; };
+		3181926E2CD4B3A6009D84C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3181922D2CD4B3A6009D84C1 /* README.md */; };
+		3181926F2CD4B3A6009D84C1 /* Satoshi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3181922F2CD4B3A6009D84C1 /* Satoshi-Regular.ttf */; };
+		318192792CD4B3A6009D84C1 /* Satoshi-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192392CD4B3A6009D84C1 /* Satoshi-Black.ttf */; };
+		3181927E2CD4B3A6009D84C1 /* Satoshi-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3181923E2CD4B3A6009D84C1 /* Satoshi-Italic.ttf */; };
+		318192842CD4B3A6009D84C1 /* Satoshi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192442CD4B3A6009D84C1 /* Satoshi-Bold.ttf */; };
+		3181928B2CD4B3A6009D84C1 /* Satoshi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3181924B2CD4B3A6009D84C1 /* Satoshi-Medium.ttf */; };
+		318192942CD4B3A6009D84C1 /* Satoshi-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192542CD4B3A6009D84C1 /* Satoshi-BlackItalic.ttf */; };
+		318192962CD4B3A6009D84C1 /* Satoshi-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192562CD4B3A6009D84C1 /* Satoshi-BoldItalic.ttf */; };
+		318192992CD4B3A6009D84C1 /* Satoshi-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318192592CD4B3A6009D84C1 /* Satoshi-Light.ttf */; };
+		3181929A2CD4B3A6009D84C1 /* Satoshi-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3181925A2CD4B3A6009D84C1 /* Satoshi-LightItalic.ttf */; };
+		318192AA2CD4B646009D84C1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318192A92CD4B646009D84C1 /* Recipe.swift */; };
+		31AE969F2CDB85E800623491 /* RecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31AE969D2CDB85E800623491 /* RecipeModel.xcdatamodeld */; };
+		31AE96A22CDB969E00623491 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 31AE96A12CDB969E00623491 /* Kingfisher */; };
+		31BB56782CDB3A1300CB56F3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB56772CDB3A1300CB56F3 /* DatabaseManager.swift */; };
+		31C13E2F2CDA2A9500B98CA2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C13E2E2CDA2A9500B98CA2 /* NetworkManager.swift */; };
+		A326CFD49905E0324C5675E2 /* Pods_ReceipeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F799F3B9FB77C01D6327D4 /* Pods_ReceipeApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		318191FA2CD4AD82009D84C1 /* ReceipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		318191FD2CD4AD82009D84C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		318191FF2CD4AD82009D84C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		318192042CD4AD82009D84C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		318192062CD4AD84009D84C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		318192092CD4AD84009D84C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3181920B2CD4AD84009D84C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318192152CD4B21B009D84C1 /* CategoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemCell.swift; sourceTree = "<group>"; };
+		318192162CD4B21B009D84C1 /* CategoryItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemCell.xib; sourceTree = "<group>"; };
+		318192192CD4B28B009D84C1 /* RecipeCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardCell.swift; sourceTree = "<group>"; };
+		3181921A2CD4B28B009D84C1 /* RecipeCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCardCell.xib; sourceTree = "<group>"; };
+		3181921D2CD4B31B009D84C1 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		318192252CD4B3A6009D84C1 /* FFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FFL.txt; sourceTree = "<group>"; };
+		318192282CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-VariableItalic.ttf"; sourceTree = "<group>"; };
+		318192292CD4B3A6009D84C1 /* Satoshi-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Variable.ttf"; sourceTree = "<group>"; };
+		3181922C2CD4B3A6009D84C1 /* satoshi.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = satoshi.css; sourceTree = "<group>"; };
+		3181922D2CD4B3A6009D84C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3181922F2CD4B3A6009D84C1 /* Satoshi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.ttf"; sourceTree = "<group>"; };
+		318192302CD4B3A6009D84C1 /* Satoshi-Italic.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.eot"; sourceTree = "<group>"; };
+		318192312CD4B3A6009D84C1 /* Satoshi-VariableItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-VariableItalic.woff"; sourceTree = "<group>"; };
+		318192322CD4B3A6009D84C1 /* Satoshi-Black.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.woff"; sourceTree = "<group>"; };
+		318192332CD4B3A6009D84C1 /* Satoshi-BlackItalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.woff2"; sourceTree = "<group>"; };
+		318192342CD4B3A6009D84C1 /* Satoshi-BoldItalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.woff2"; sourceTree = "<group>"; };
+		318192352CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-VariableItalic.ttf"; sourceTree = "<group>"; };
+		318192362CD4B3A6009D84C1 /* Satoshi-Italic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.woff2"; sourceTree = "<group>"; };
+		318192372CD4B3A6009D84C1 /* Satoshi-Bold.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.eot"; sourceTree = "<group>"; };
+		318192382CD4B3A6009D84C1 /* Satoshi-BlackItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.woff"; sourceTree = "<group>"; };
+		318192392CD4B3A6009D84C1 /* Satoshi-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.ttf"; sourceTree = "<group>"; };
+		3181923A2CD4B3A6009D84C1 /* Satoshi-Light.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.woff2"; sourceTree = "<group>"; };
+		3181923B2CD4B3A6009D84C1 /* Satoshi-Regular.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.eot"; sourceTree = "<group>"; };
+		3181923C2CD4B3A6009D84C1 /* Satoshi-MediumItalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.woff2"; sourceTree = "<group>"; };
+		3181923D2CD4B3A6009D84C1 /* Satoshi-MediumItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.woff"; sourceTree = "<group>"; };
+		3181923E2CD4B3A6009D84C1 /* Satoshi-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.ttf"; sourceTree = "<group>"; };
+		3181923F2CD4B3A6009D84C1 /* Satoshi-Black.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.woff2"; sourceTree = "<group>"; };
+		318192402CD4B3A6009D84C1 /* Satoshi-Italic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.woff"; sourceTree = "<group>"; };
+		318192412CD4B3A6009D84C1 /* Satoshi-Bold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.woff"; sourceTree = "<group>"; };
+		318192422CD4B3A6009D84C1 /* Satoshi-VariableItalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-VariableItalic.woff2"; sourceTree = "<group>"; };
+		318192432CD4B3A6009D84C1 /* Satoshi-VariableItalic.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-VariableItalic.eot"; sourceTree = "<group>"; };
+		318192442CD4B3A6009D84C1 /* Satoshi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.ttf"; sourceTree = "<group>"; };
+		318192452CD4B3A6009D84C1 /* Satoshi-Black.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.eot"; sourceTree = "<group>"; };
+		318192462CD4B3A6009D84C1 /* Satoshi-BoldItalic.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.eot"; sourceTree = "<group>"; };
+		318192472CD4B3A6009D84C1 /* Satoshi-Regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.woff"; sourceTree = "<group>"; };
+		318192482CD4B3A6009D84C1 /* Satoshi-Regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.woff2"; sourceTree = "<group>"; };
+		318192492CD4B3A6009D84C1 /* Satoshi-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3181924A2CD4B3A6009D84C1 /* Satoshi-Variable.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Variable.woff"; sourceTree = "<group>"; };
+		3181924B2CD4B3A6009D84C1 /* Satoshi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.ttf"; sourceTree = "<group>"; };
+		3181924C2CD4B3A6009D84C1 /* Satoshi-LightItalic.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.eot"; sourceTree = "<group>"; };
+		3181924D2CD4B3A6009D84C1 /* Satoshi-Medium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.woff"; sourceTree = "<group>"; };
+		3181924E2CD4B3A6009D84C1 /* Satoshi-Light.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.eot"; sourceTree = "<group>"; };
+		3181924F2CD4B3A6009D84C1 /* Satoshi-Medium.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.woff2"; sourceTree = "<group>"; };
+		318192502CD4B3A6009D84C1 /* Satoshi-LightItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.woff"; sourceTree = "<group>"; };
+		318192512CD4B3A6009D84C1 /* Satoshi-Variable.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Variable.eot"; sourceTree = "<group>"; };
+		318192522CD4B3A6009D84C1 /* Satoshi-LightItalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.woff2"; sourceTree = "<group>"; };
+		318192532CD4B3A6009D84C1 /* Satoshi-Light.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.woff"; sourceTree = "<group>"; };
+		318192542CD4B3A6009D84C1 /* Satoshi-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.ttf"; sourceTree = "<group>"; };
+		318192552CD4B3A6009D84C1 /* Satoshi-Medium.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.eot"; sourceTree = "<group>"; };
+		318192562CD4B3A6009D84C1 /* Satoshi-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.ttf"; sourceTree = "<group>"; };
+		318192572CD4B3A6009D84C1 /* Satoshi-MediumItalic.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.eot"; sourceTree = "<group>"; };
+		318192582CD4B3A6009D84C1 /* Satoshi-BoldItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.woff"; sourceTree = "<group>"; };
+		318192592CD4B3A6009D84C1 /* Satoshi-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.ttf"; sourceTree = "<group>"; };
+		3181925A2CD4B3A6009D84C1 /* Satoshi-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.ttf"; sourceTree = "<group>"; };
+		3181925B2CD4B3A6009D84C1 /* Satoshi-Variable.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Variable.woff2"; sourceTree = "<group>"; };
+		3181925C2CD4B3A6009D84C1 /* Satoshi-Bold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.woff2"; sourceTree = "<group>"; };
+		3181925D2CD4B3A6009D84C1 /* Satoshi-BlackItalic.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.eot"; sourceTree = "<group>"; };
+		3181925E2CD4B3A6009D84C1 /* Satoshi-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Variable.ttf"; sourceTree = "<group>"; };
+		318192602CD4B3A6009D84C1 /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		318192612CD4B3A6009D84C1 /* Satoshi-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.otf"; sourceTree = "<group>"; };
+		318192622CD4B3A6009D84C1 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
+		318192632CD4B3A6009D84C1 /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		318192642CD4B3A6009D84C1 /* Satoshi-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.otf"; sourceTree = "<group>"; };
+		318192652CD4B3A6009D84C1 /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
+		318192662CD4B3A6009D84C1 /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
+		318192672CD4B3A6009D84C1 /* Satoshi-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.otf"; sourceTree = "<group>"; };
+		318192682CD4B3A6009D84C1 /* Satoshi-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.otf"; sourceTree = "<group>"; };
+		318192692CD4B3A6009D84C1 /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		318192A92CD4B646009D84C1 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		31AE969E2CDB85E800623491 /* RecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeModel.xcdatamodel; sourceTree = "<group>"; };
+		31BB56772CDB3A1300CB56F3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		31C13E2E2CDA2A9500B98CA2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		43FCC7B44F025FF8AA53A758 /* Pods-ReceipeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReceipeApp.release.xcconfig"; path = "Target Support Files/Pods-ReceipeApp/Pods-ReceipeApp.release.xcconfig"; sourceTree = "<group>"; };
+		70F799F3B9FB77C01D6327D4 /* Pods_ReceipeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReceipeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA0D910C8741E51AEB626DC /* Pods-ReceipeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReceipeApp.debug.xcconfig"; path = "Target Support Files/Pods-ReceipeApp/Pods-ReceipeApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		318191F72CD4AD82009D84C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AE96A22CDB969E00623491 /* Kingfisher in Frameworks */,
+				A326CFD49905E0324C5675E2 /* Pods_ReceipeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		318191F12CD4AD82009D84C1 = {
+			isa = PBXGroup;
+			children = (
+				318191FC2CD4AD82009D84C1 /* ReceipeApp */,
+				318191FB2CD4AD82009D84C1 /* Products */,
+				EB6FBA6A7F01B93FC267BEBB /* Pods */,
+				B07F28158559720E68465A40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		318191FB2CD4AD82009D84C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318191FA2CD4AD82009D84C1 /* ReceipeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		318191FC2CD4AD82009D84C1 /* ReceipeApp */ = {
+			isa = PBXGroup;
+			children = (
+				31BB56762CDB39B100CB56F3 /* Database */,
+				31C13E2D2CDA2A6700B98CA2 /* Network Manager */,
+				318192222CD4B396009D84C1 /* Fonts */,
+				318192132CD4ADD9009D84C1 /* Views */,
+				318192122CD4ADCB009D84C1 /* Controllers */,
+				318192112CD4ADBD009D84C1 /* Models */,
+				318191FD2CD4AD82009D84C1 /* AppDelegate.swift */,
+				318191FF2CD4AD82009D84C1 /* SceneDelegate.swift */,
+				318192032CD4AD82009D84C1 /* Main.storyboard */,
+				318192062CD4AD84009D84C1 /* Assets.xcassets */,
+				318192082CD4AD84009D84C1 /* LaunchScreen.storyboard */,
+				3181920B2CD4AD84009D84C1 /* Info.plist */,
+				31AE969D2CDB85E800623491 /* RecipeModel.xcdatamodeld */,
+			);
+			path = ReceipeApp;
+			sourceTree = "<group>";
+		};
+		318192112CD4ADBD009D84C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				318192A92CD4B646009D84C1 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		318192122CD4ADCB009D84C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3181921D2CD4B31B009D84C1 /* RecipeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		318192132CD4ADD9009D84C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				318192142CD4ADE6009D84C1 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		318192142CD4ADE6009D84C1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				318192152CD4B21B009D84C1 /* CategoryItemCell.swift */,
+				318192162CD4B21B009D84C1 /* CategoryItemCell.xib */,
+				318192192CD4B28B009D84C1 /* RecipeCardCell.swift */,
+				3181921A2CD4B28B009D84C1 /* RecipeCardCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		318192222CD4B396009D84C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				318192232CD4B3A6009D84C1 /* Satoshi_Complete */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		318192232CD4B3A6009D84C1 /* Satoshi_Complete */ = {
+			isa = PBXGroup;
+			children = (
+				318192242CD4B3A6009D84C1 /* License */,
+				318192262CD4B3A6009D84C1 /* Fonts */,
+			);
+			path = Satoshi_Complete;
+			sourceTree = "<group>";
+		};
+		318192242CD4B3A6009D84C1 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				318192252CD4B3A6009D84C1 /* FFL.txt */,
+			);
+			path = License;
+			sourceTree = "<group>";
+		};
+		318192262CD4B3A6009D84C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				318192272CD4B3A6009D84C1 /* Variable */,
+				3181922A2CD4B3A6009D84C1 /* WEB */,
+				3181925F2CD4B3A6009D84C1 /* OTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		318192272CD4B3A6009D84C1 /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				318192282CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf */,
+				318192292CD4B3A6009D84C1 /* Satoshi-Variable.ttf */,
+			);
+			path = Variable;
+			sourceTree = "<group>";
+		};
+		3181922A2CD4B3A6009D84C1 /* WEB */ = {
+			isa = PBXGroup;
+			children = (
+				3181922B2CD4B3A6009D84C1 /* css */,
+				3181922D2CD4B3A6009D84C1 /* README.md */,
+				3181922E2CD4B3A6009D84C1 /* fonts */,
+			);
+			path = WEB;
+			sourceTree = "<group>";
+		};
+		3181922B2CD4B3A6009D84C1 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				3181922C2CD4B3A6009D84C1 /* satoshi.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		3181922E2CD4B3A6009D84C1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3181922F2CD4B3A6009D84C1 /* Satoshi-Regular.ttf */,
+				318192302CD4B3A6009D84C1 /* Satoshi-Italic.eot */,
+				318192312CD4B3A6009D84C1 /* Satoshi-VariableItalic.woff */,
+				318192322CD4B3A6009D84C1 /* Satoshi-Black.woff */,
+				318192332CD4B3A6009D84C1 /* Satoshi-BlackItalic.woff2 */,
+				318192342CD4B3A6009D84C1 /* Satoshi-BoldItalic.woff2 */,
+				318192352CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf */,
+				318192362CD4B3A6009D84C1 /* Satoshi-Italic.woff2 */,
+				318192372CD4B3A6009D84C1 /* Satoshi-Bold.eot */,
+				318192382CD4B3A6009D84C1 /* Satoshi-BlackItalic.woff */,
+				318192392CD4B3A6009D84C1 /* Satoshi-Black.ttf */,
+				3181923A2CD4B3A6009D84C1 /* Satoshi-Light.woff2 */,
+				3181923B2CD4B3A6009D84C1 /* Satoshi-Regular.eot */,
+				3181923C2CD4B3A6009D84C1 /* Satoshi-MediumItalic.woff2 */,
+				3181923D2CD4B3A6009D84C1 /* Satoshi-MediumItalic.woff */,
+				3181923E2CD4B3A6009D84C1 /* Satoshi-Italic.ttf */,
+				3181923F2CD4B3A6009D84C1 /* Satoshi-Black.woff2 */,
+				318192402CD4B3A6009D84C1 /* Satoshi-Italic.woff */,
+				318192412CD4B3A6009D84C1 /* Satoshi-Bold.woff */,
+				318192422CD4B3A6009D84C1 /* Satoshi-VariableItalic.woff2 */,
+				318192432CD4B3A6009D84C1 /* Satoshi-VariableItalic.eot */,
+				318192442CD4B3A6009D84C1 /* Satoshi-Bold.ttf */,
+				318192452CD4B3A6009D84C1 /* Satoshi-Black.eot */,
+				318192462CD4B3A6009D84C1 /* Satoshi-BoldItalic.eot */,
+				318192472CD4B3A6009D84C1 /* Satoshi-Regular.woff */,
+				318192482CD4B3A6009D84C1 /* Satoshi-Regular.woff2 */,
+				318192492CD4B3A6009D84C1 /* Satoshi-MediumItalic.ttf */,
+				3181924A2CD4B3A6009D84C1 /* Satoshi-Variable.woff */,
+				3181924B2CD4B3A6009D84C1 /* Satoshi-Medium.ttf */,
+				3181924C2CD4B3A6009D84C1 /* Satoshi-LightItalic.eot */,
+				3181924D2CD4B3A6009D84C1 /* Satoshi-Medium.woff */,
+				3181924E2CD4B3A6009D84C1 /* Satoshi-Light.eot */,
+				3181924F2CD4B3A6009D84C1 /* Satoshi-Medium.woff2 */,
+				318192502CD4B3A6009D84C1 /* Satoshi-LightItalic.woff */,
+				318192512CD4B3A6009D84C1 /* Satoshi-Variable.eot */,
+				318192522CD4B3A6009D84C1 /* Satoshi-LightItalic.woff2 */,
+				318192532CD4B3A6009D84C1 /* Satoshi-Light.woff */,
+				318192542CD4B3A6009D84C1 /* Satoshi-BlackItalic.ttf */,
+				318192552CD4B3A6009D84C1 /* Satoshi-Medium.eot */,
+				318192562CD4B3A6009D84C1 /* Satoshi-BoldItalic.ttf */,
+				318192572CD4B3A6009D84C1 /* Satoshi-MediumItalic.eot */,
+				318192582CD4B3A6009D84C1 /* Satoshi-BoldItalic.woff */,
+				318192592CD4B3A6009D84C1 /* Satoshi-Light.ttf */,
+				3181925A2CD4B3A6009D84C1 /* Satoshi-LightItalic.ttf */,
+				3181925B2CD4B3A6009D84C1 /* Satoshi-Variable.woff2 */,
+				3181925C2CD4B3A6009D84C1 /* Satoshi-Bold.woff2 */,
+				3181925D2CD4B3A6009D84C1 /* Satoshi-BlackItalic.eot */,
+				3181925E2CD4B3A6009D84C1 /* Satoshi-Variable.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		3181925F2CD4B3A6009D84C1 /* OTF */ = {
+			isa = PBXGroup;
+			children = (
+				318192602CD4B3A6009D84C1 /* Satoshi-Bold.otf */,
+				318192612CD4B3A6009D84C1 /* Satoshi-Italic.otf */,
+				318192622CD4B3A6009D84C1 /* Satoshi-Black.otf */,
+				318192632CD4B3A6009D84C1 /* Satoshi-Regular.otf */,
+				318192642CD4B3A6009D84C1 /* Satoshi-BoldItalic.otf */,
+				318192652CD4B3A6009D84C1 /* Satoshi-Light.otf */,
+				318192662CD4B3A6009D84C1 /* Satoshi-LightItalic.otf */,
+				318192672CD4B3A6009D84C1 /* Satoshi-BlackItalic.otf */,
+				318192682CD4B3A6009D84C1 /* Satoshi-MediumItalic.otf */,
+				318192692CD4B3A6009D84C1 /* Satoshi-Medium.otf */,
+			);
+			path = OTF;
+			sourceTree = "<group>";
+		};
+		31BB56762CDB39B100CB56F3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				31BB56772CDB3A1300CB56F3 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		31C13E2D2CDA2A6700B98CA2 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				31C13E2E2CDA2A9500B98CA2 /* NetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		B07F28158559720E68465A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70F799F3B9FB77C01D6327D4 /* Pods_ReceipeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB6FBA6A7F01B93FC267BEBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0D910C8741E51AEB626DC /* Pods-ReceipeApp.debug.xcconfig */,
+				43FCC7B44F025FF8AA53A758 /* Pods-ReceipeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		318191F92CD4AD82009D84C1 /* ReceipeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3181920E2CD4AD84009D84C1 /* Build configuration list for PBXNativeTarget "ReceipeApp" */;
+			buildPhases = (
+				BEA9EC2C756EFCE64F37869E /* [CP] Check Pods Manifest.lock */,
+				318191F62CD4AD82009D84C1 /* Sources */,
+				318191F72CD4AD82009D84C1 /* Frameworks */,
+				318191F82CD4AD82009D84C1 /* Resources */,
+				B5EB93812394BAD911AF6C98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReceipeApp;
+			packageProductDependencies = (
+				31AE96A12CDB969E00623491 /* Kingfisher */,
+			);
+			productName = ReceipeApp;
+			productReference = 318191FA2CD4AD82009D84C1 /* ReceipeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		318191F22CD4AD82009D84C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					318191F92CD4AD82009D84C1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 318191F52CD4AD82009D84C1 /* Build configuration list for PBXProject "ReceipeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 318191F12CD4AD82009D84C1;
+			packageReferences = (
+				31AE96A02CDB969E00623491 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 318191FB2CD4AD82009D84C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				318191F92CD4AD82009D84C1 /* ReceipeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		318191F82CD4AD82009D84C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318192992CD4B3A6009D84C1 /* Satoshi-Light.ttf in Resources */,
+				3181920A2CD4AD84009D84C1 /* LaunchScreen.storyboard in Resources */,
+				318192962CD4B3A6009D84C1 /* Satoshi-BoldItalic.ttf in Resources */,
+				3181927E2CD4B3A6009D84C1 /* Satoshi-Italic.ttf in Resources */,
+				3181926D2CD4B3A6009D84C1 /* satoshi.css in Resources */,
+				3181926E2CD4B3A6009D84C1 /* README.md in Resources */,
+				3181926B2CD4B3A6009D84C1 /* Satoshi-VariableItalic.ttf in Resources */,
+				318192072CD4AD84009D84C1 /* Assets.xcassets in Resources */,
+				318192182CD4B21B009D84C1 /* CategoryItemCell.xib in Resources */,
+				3181926A2CD4B3A6009D84C1 /* FFL.txt in Resources */,
+				3181929A2CD4B3A6009D84C1 /* Satoshi-LightItalic.ttf in Resources */,
+				318192052CD4AD82009D84C1 /* Main.storyboard in Resources */,
+				3181928B2CD4B3A6009D84C1 /* Satoshi-Medium.ttf in Resources */,
+				3181926C2CD4B3A6009D84C1 /* Satoshi-Variable.ttf in Resources */,
+				318192842CD4B3A6009D84C1 /* Satoshi-Bold.ttf in Resources */,
+				3181926F2CD4B3A6009D84C1 /* Satoshi-Regular.ttf in Resources */,
+				3181921C2CD4B28B009D84C1 /* RecipeCardCell.xib in Resources */,
+				318192792CD4B3A6009D84C1 /* Satoshi-Black.ttf in Resources */,
+				318192942CD4B3A6009D84C1 /* Satoshi-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5EB93812394BAD911AF6C98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReceipeApp/Pods-ReceipeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReceipeApp/Pods-ReceipeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReceipeApp/Pods-ReceipeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA9EC2C756EFCE64F37869E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReceipeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		318191F62CD4AD82009D84C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318191FE2CD4AD82009D84C1 /* AppDelegate.swift in Sources */,
+				31BB56782CDB3A1300CB56F3 /* DatabaseManager.swift in Sources */,
+				31AE969F2CDB85E800623491 /* RecipeModel.xcdatamodeld in Sources */,
+				318192AA2CD4B646009D84C1 /* Recipe.swift in Sources */,
+				3181921E2CD4B31B009D84C1 /* RecipeViewController.swift in Sources */,
+				31C13E2F2CDA2A9500B98CA2 /* NetworkManager.swift in Sources */,
+				318192172CD4B21B009D84C1 /* CategoryItemCell.swift in Sources */,
+				3181921B2CD4B28B009D84C1 /* RecipeCardCell.swift in Sources */,
+				318192002CD4AD82009D84C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		318192032CD4AD82009D84C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				318192042CD4AD82009D84C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		318192082CD4AD84009D84C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				318192092CD4AD84009D84C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3181920C2CD4AD84009D84C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3181920D2CD4AD84009D84C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3181920F2CD4AD84009D84C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA0D910C8741E51AEB626DC /* Pods-ReceipeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBC6QZE5G7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceipeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSLPinningImp.ReceipeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		318192102CD4AD84009D84C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43FCC7B44F025FF8AA53A758 /* Pods-ReceipeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBC6QZE5G7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceipeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SSLPinningImp.ReceipeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		318191F52CD4AD82009D84C1 /* Build configuration list for PBXProject "ReceipeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3181920C2CD4AD84009D84C1 /* Debug */,
+				3181920D2CD4AD84009D84C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3181920E2CD4AD84009D84C1 /* Build configuration list for PBXNativeTarget "ReceipeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3181920F2CD4AD84009D84C1 /* Debug */,
+				318192102CD4AD84009D84C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31AE96A02CDB969E00623491 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31AE96A12CDB969E00623491 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31AE96A02CDB969E00623491 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		31AE969D2CDB85E800623491 /* RecipeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				31AE969E2CDB85E800623491 /* RecipeModel.xcdatamodel */,
+			);
+			currentVersion = 31AE969E2CDB85E800623491 /* RecipeModel.xcdatamodel */;
+			path = RecipeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 318191F22CD4AD82009D84C1 /* Project object */;
+}
